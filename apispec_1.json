@@ -212,13 +212,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "default": {
-                "spatialReference": {
-                  "wkid:4326": null
-                },
-                "x:2.354936010938151": null,
-                "y:48.85728066161469": null
-              }
+              "default": "{x:2.354936010938151,y:48.85728066161469, spatialReference:{wkid:4326}}"
             }
           },
           {

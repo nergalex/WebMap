@@ -160,7 +160,7 @@ class ApiIdentify(Resource):
             required: true
             description: json
             type: string
-            default: {x:2.354936010938151,y:48.85728066161469, spatialReference:{wkid:4326}}
+            default: '{x:2.354936010938151,y:48.85728066161469, spatialReference:{wkid:4326}}'
           - name: geometryType
             in: path
             required: true
