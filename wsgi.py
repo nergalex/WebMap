@@ -24,62 +24,62 @@ class ApiExport(Resource):
           - poc
         parameters:
           - name: f
-            in: path
+            in: query
             required: true
             description: file type
             type: string
             default: json
           - name: bbox
-            in: path
+            in: query
             required: true
             description: geo location
             type: string
             default: '2.336160547833903,48.85683241962956,2.3533266855292156,48.86193225878908'
           - name: size
-            in: path
+            in: query
             required: true
             description: screen size
             type: string
             default: '1600,723'
           - name: imageSR
-            in: path
+            in: query
             required: true
             description: image rendering
             type: integer
             default: 102113
           - name: bboxSR
-            in: path
+            in: query
             required: true
             description: location in screen
             type: integer
             default: 4326
           - name: format
-            in: path
+            in: query
             required: true
             description: requested format
             type: string
             enum: ['png32', 'jpg']
             default: png32
           - name: layerDefs
-            in: path
+            in: query
             required: true
             description: layer definition
             type: string
             default: '{}'
           - name: layers
-            in: path
+            in: query
             required: true
             description: layers
             type: string
             default: '1,2,3,4,7,8,9,10,9999'
           - name: transparent
-            in: path
+            in: query
             required: true
             description: transparent
             type: string
             default: 'true'
           - name: callback
-            in: path
+            in: query
             required: true
             description: callback
             type: string
@@ -156,61 +156,61 @@ class ApiIdentify(Resource):
           - poc
         parameters:
           - name: geometry
-            in: path
+            in: query
             required: true
             description: json
             type: string
             default: '{x:2.354936010938151,y:48.85728066161469, spatialReference:{wkid:4326}}'
           - name: geometryType
-            in: path
+            in: query
             required: true
             description: geometryType
             type: string
             default: esriGeometryPoint
           - name: mapExtent
-            in: path
+            in: query
             required: true
             description: mapExtent
             type: string
             default: '{xmin:2.3287147356085613,ymin:48.85350400910461,xmax:2.3630470109991863,ymax:48.863703846006224, spatialReference:{wkid:4326}}'
           - name: tolerance
-            in: path
+            in: query
             required: true
             description: tolerance
             type: integer
             default: 15
           - name: sr
-            in: path
+            in: query
             required: true
             description: sr
             type: integer
             default: 4326
           - name: imageDisplay
-            in: path
+            in: query
             required: true
             description: imageDisplay
             type: string
             default: '1600,723,96'
           - name: layers
-            in: path
+            in: query
             required: true
             description: layers
             type: string
             default: 'visible:1,2,3,4,7,8,9,10'
           - name: returnGeometry
-            in: path
+            in: query
             required: true
             description: returnGeometry
             type: string
             default: 'true'
           - name: callback
-            in: path
+            in: query
             required: true
             description: callback
             type: string
             default: 'ags_jsonp.ags_jsonp_25_537217'
           - name: f
-            in: path
+            in: query
             required: true
             description: file type
             type: string
