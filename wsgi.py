@@ -392,7 +392,6 @@ class ApiSpatial(Resource):
 
 
 api.add_resource(ApiExport, '/arcgis/rest/services/SIROCCO/SIROCARTE/MapServer/export')
-api.add_resource(ApiExport, '/arcgis/rest/services/SIROCCO/SIROCARTE/MapServer/export/v2')
 api.add_resource(ApiIdentify, '/arcgis/rest/services/SIROCCO/SIROCARTE/MapServer/identify')
 api.add_resource(ApiSpatial, '/arcgis/rest/services/SIROCCO/SIROCARTE/MapServer/5/query')
 
