@@ -5,10 +5,12 @@ from flasgger import Swagger
 # -------------- API --------------
 # listener
 application = Flask(__name__)
+"""
 application.config['SWAGGER'] = {
     'title': 'WebMap F5',
     'openapi': '3.0.2'
 }
+"""
 api = Api(application)
 swagger = Swagger(application)
 
